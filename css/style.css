@@ -1,4 +1,50 @@
+/*-- standard resets-*/
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+html body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0; }
+html h1 {
+  font: 30px "Open Sans", sans-serif;
+  color: #2d2d2d;
+  text-align: center;
+  margin-bottom: 30px; }
+html p {
+  margin: 0;
+  padding: 0; }
+html a {
+  text-decoration: none; }
+html img {
+  border: none; }
+html h1, html h2, html h3, html h4, html h5, html h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400; }
+html strong {
+  font-weight: bold; }
+html em {
+  font-style: italic; }
+html form, html menu, html iframe {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none; }
+html ol, html ul, html dl, html li, html dt, html dd {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+html table {
+  width: 100%;
+  border-collapse: collapse; }
+html * {
+  outline: none;
+  font-family: 'Open Sans', sans-serif; }
 
+/*-- standard resets-*/
 .standard-button {
 
   /*background: #24AB3E;*/
@@ -6,7 +52,7 @@
   text-decoration: none;
   cursor: pointer;
   background: #d92228;
-  background: linear-gradient(45deg, #fc565b 0%,#fc565b 44%,#f3494e 63%,#d92228 88%,#d92228 88%);
+  background: linear-gradient(45deg, #fc565b 0%,#d92228 44%,#d92228 63%,#d92228 88%,#d92228 88%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da242a', endColorstr='#ff5a5f',GradientType=1 );
   transition: all 300ms ease-in-out;
@@ -37,7 +83,7 @@
   }
   .standard-button:hover {
    background: #fc565b;
-   background: linear-gradient(45deg, #d92228 8%,#d92228  8%,#d92228 32%,#f64d52  49%,#f64d52 49%,#fc565b  73%,#fc565b 73%,#fc565b 98%,#fc565b 98%);
+   background: linear-gradient(45deg, #d92228 8%,#d92228  8%,#d92228 32%,#d92228  49%,#d92228 49%,#fc565b  73%,#fc565b 73%,#fc565b 98%,#fc565b 98%);
     transition: all 300ms ease-in-out;
     text-decoration: none;
     color: #fff;
@@ -70,31 +116,28 @@
   min-width: 100%;
   min-height: 100vh;
 }
-
-
+.about-goods-row{
+  align-items: center;
+}
 .about-goods {
-  padding: 40px 0 8px;
+  padding: 32px 0;
 }
-.top-section{
-  font-size: 40px;
-  text-align: center;
-  background-color: #026f73;
-  color: #fff;
+.about-goods h1{
+  font-size: 38px;
   font-weight: 900;
-  padding: 16px;
-  line-height: 45px;
-  margin: 16px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(8, 8, 8, 1);
 }
-.top-section.yellow{
-  background-color: #f8eb22;
-  color: #000;
-  font-weight: 100;
-}
+
 .about-goods p{
   font-weight: 900;
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   margin: 16px;
+  text-shadow: 0 2px 8px rgba(8, 8, 8, 1);
+}
+.yellow{
+  color:#ffea00;
 }
 .about-goods .prod-dec{
   margin: 16px 16px 0;
@@ -104,16 +147,20 @@
   width: 100%;
 }
 .about-goods .formdiv{
-  margin: 32px 16px 0;
+  margin: 0 16px;
 }
 
-  .about-goods h2 {
-    font-size: 26px;
+  .attent-title {
+    font-size: 50px;
     line-height: 28px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    border: 1px solid #fff;
     padding: 6px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #da242a;
+    text-shadow: 0 2px 8px rgba(8, 8, 8, 1);
+    margin: 24px 0;
   }
   .good-description {
     background: #ffffff8f;
@@ -181,7 +228,7 @@
 }
 .circle-check h4{
   color: #fff;
-  font-size: 18px;
+  font-size: 24px;
   margin-top: 15px;
   font-weight: 900;
 }
@@ -286,32 +333,90 @@
 
 /*------------------ screen video ---------------------*/
 .video-screen{
-  padding: 54px 0;
+  padding: 54px 0 24px;
   color: #fff;
+  font-size: 20px;
 }
-
+.video-screen h4{
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.video-screen h4:after{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 250px;
+  margin: 16px 0;
+  background: #ffea00;
+}
+.video-txt{
+  color:#fff;
+}
 .video-box {
   padding: 2px 10px;
 }
-.video-box::before{
-  content: '';
-  position: absolute;
-  border: 6px solid #fff;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
+.video-border{
+  border: 12px solid #fff;
+  background-color: #000;
 }
 .video-screen .button-wrapper{
   display: flex;
   justify-content: center;
 }
 /*------------------ screen video END ---------------------*/
-/*------------------ screen video END ---------------------*/
+/*------------------ info-screen---------------------*/
+.info-screen{
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 32px 0;
+}
 .info-screen .container{
   text-align: center;
 }
-/*------------------ ---------------------*/
+.info-title{
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.info-title:after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 250px;
+  margin: 16px auto;
+  background: #ffea00;
+}
+.info-txt{
+  color: #fff;
+  font-size: 20px;
+  margin: 32px 0;
+}
+.info-box h4{
+  margin: 16px 0;
+  font-size: 30px;
+  font-weight: 900;
+}
+.info-box p{
+  color: #fff;
+  font-size: 20px;
+  margin: 8px 0;
+}
+.att-box{
+  margin: 32px 0 0;
+  padding-bottom: 104px;
+  position: relative;
+}
+.att-box:before{
+  content: url(../images/arrow.png);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -106px;
+  -webkit-animation: rightarrow 0.6s infinite alternate ease-in-out;
+}
+/*------------------info-screen END---------------------*/
 
 /*---------------screen eight--------------------*/
 .screen-eight{
@@ -320,6 +425,17 @@
 }
 .screen-eight .row{
   justify-content: space-around;
+}
+.screen-eight-title{
+  font-weight: 900;
+  padding: 8px;
+  width: 65%;
+  font-size: 46px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+   margin: 0 auto 32px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .screen-eight-box{
   max-width: 33%;
@@ -341,6 +457,7 @@
   text-align: center;
   font-size: 24px;
   font-weight: 900;
+  margin: 32px 0;
 }
 .eight-screen-product{
   text-align: center;
@@ -460,9 +577,9 @@
 .faq h2 {
   margin-bottom: 40px;
   font-size: 40px;
-  font-family: 'Courgette', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
   font-weight: 900;
-  color: #000;
 }
 .faq ul li {
   text-align: center;
@@ -499,8 +616,8 @@
   height: 15px;
   position: absolute;
   right: 25px;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -531,6 +648,7 @@
   line-height: 30px;
   padding: 15px 0;
   font-weight: 500;
+  color: #fff;
   margin-bottom: 0; }
 .faq ul li ul {
   padding-top: 15px; }
@@ -590,9 +708,9 @@
   line-height: 24px;
   color: #292929;
   font-weight: lighter;
-  background-color: #e9ffff;
+  background-color: #fff;
   padding: 8px;
-  border-radius: 20px;
+  border-radius: 8px 8px 0 0;
   margin: 0 0 0 35px;
 }
 .image-wrapper {
@@ -659,15 +777,21 @@
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  top: -7px;
+  top: 0;
+  background-color: #eeefef;
+  border-radius: 0 0 8px 8px;
+  margin-left: 35px;
 }
 .text {
-  margin: 12px 0 0 44px;
+  margin: 4px 0 4px 10px;
 }
 .icons {
   background-color: #fff;
   border-radius: 20px;
   padding: 4px;
+  top: 12px;
+  position: absolute;
+  right: 0;
 }
 .like-row .grey {
   color: #a8a8a8;
@@ -1453,53 +1577,7 @@
 
 
 
-/*-- standard resets-*/
-html {
-  padding: 0;
-  margin: 0;
-  height: 100%; }
-html body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  z-index: 0; }
-html h1 {
-  font: 30px "Abril Fatface", cursive;
-  color: #2d2d2d;
-  text-align: center;
-  margin-bottom: 30px; }
-html p {
-  margin: 0;
-  padding: 0; }
-html a {
-  text-decoration: none; }
-html img {
-  border: none; }
-html h1, html h2, html h3, html h4, html h5, html h6 {
-  margin: 0;
-  padding: 0;
-  font-weight: 400; }
-html strong {
-  font-weight: bold; }
-html em {
-  font-style: italic; }
-html form, html menu, html iframe {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: none; }
-html ol, html ul, html dl, html li, html dt, html dd {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-html table {
-  width: 100%;
-  border-collapse: collapse; }
-html * {
-  outline: none;
-  font-family: 'Open Sans', sans-serif; }
 
-/*-- standard resets-*/
 
 section{
   position: relative;
@@ -1534,7 +1612,7 @@ form .head_bg.sec_step {
 form .foot_bg {
   background: #eafaff; }
 form .head_form {
-  padding: 20px 15px; }
+  padding: 0; }
 form .head_form p {
   font-size: 20px;
   line-height: 26px;
@@ -2005,7 +2083,7 @@ form .privacy-step1 label {
   font-size: 16px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   font-weight: 900;
   font-family: 'Open Sans', sans-serif;
 }
@@ -2020,22 +2098,22 @@ form .privacy-step1 label {
   left: 8px;
   width: 4px;
   height: 4px;
-  background: #000; }
+  background: #fff; }
 .flip-clock-dot.top {
   top: 38px;
-  background: #000 ;}
+  background: #fff ;}
 .flip-clock-dot.bottom {
   bottom: 22px;
-  background: #000 ;
+  background: #fff ;
 }
 #down .flip-clock-dot.top {
-  background: #000;
+  background: #fff;
 }
 #down .flip-clock-dot.bottom {
-  background: #000;
+  background: #fff;
 }
 #down .flip-clock-divider .flip-clock-label{
-  color: #000;
+  color: #fff;
 }
 .hours .flip-clock-divider .flip-clock-label {
   right: -52px; }
