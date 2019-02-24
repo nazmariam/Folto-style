@@ -471,7 +471,7 @@ html * {
 /*---------------screen three bottles--------------------*/
 .three-bottles{
   background-color: #fff;
-  padding: 42px 0;
+  padding: 42px 0 0;
 }
 .three-bottles .row{
   justify-content: center;
@@ -506,7 +506,10 @@ html * {
     color: #878787;
     text-align: center;
     min-height: 480px;
-    background-color: #fff;
+    background-color: #fff77f;
+}
+.best-price{
+  background-color: #65ff89;
 }
 .ott_main .x1 img,
 .ott_main .x2 img,
@@ -560,6 +563,8 @@ html * {
 .three-bottles p {
   text-align: center;
   font-weight: 600;
+  font-size: 24px;
+  margin: 16px 0;
 }
 .three-bottles-img{
   text-align: center;
@@ -570,6 +575,32 @@ html * {
 }
 .att-box{
   text-align: center;
+}
+
+
+
+.three-bottles .flip-clock-divider .flip-clock-label {
+  color: #000;
+}
+
+.three-bottles .flip-clock-dot {
+  background: #000; }
+.three-bottles .flip-clock-dot.top {
+  background: #000;}
+.three-bottles .flip-clock-dot.bottom {
+  background: #000;
+}
+.three-bottles #down .flip-clock-dot.top {
+  background: #000;
+}
+.three-bottles #down .flip-clock-dot.bottom {
+  background: #000;
+}
+.three-bottles #down .flip-clock-divider .flip-clock-label{
+  color: #000;
+}
+.three-bottles .att-box{
+  padding-bottom: 32px;
 }
 /*---------------------------three bottles-END--------------------------------*/
 /*---------------------------FAQ----------------------------*/
