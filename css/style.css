@@ -508,7 +508,7 @@ html * {
     min-height: 480px;
     background-color: #fff77f;
 }
-.best-price{
+.ott_main.best-price{
   background-color: #65ff89;
 }
 .ott_main .x1 img,
@@ -576,13 +576,9 @@ html * {
 .att-box{
   text-align: center;
 }
-
-
-
 .three-bottles .flip-clock-divider .flip-clock-label {
   color: #000;
 }
-
 .three-bottles .flip-clock-dot {
   background: #000; }
 .three-bottles .flip-clock-dot.top {
@@ -601,6 +597,10 @@ html * {
 }
 .three-bottles .att-box{
   padding-bottom: 32px;
+}
+.three-bottles .flip-clock-wrapper ul li a div div.inn {
+  background-color: #4ca396;
+  color:#fff;
 }
 /*---------------------------three bottles-END--------------------------------*/
 /*---------------------------FAQ----------------------------*/
@@ -1017,6 +1017,7 @@ html * {
   .video-block{
   background-image: none;}
 }
+
 
 
 /*------------one-two-three---------------------*/
