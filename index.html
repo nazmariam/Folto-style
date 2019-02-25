@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="format-detection" content="telephone=no">
     <meta property="og:image" content="og-image.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,500,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700;subset=cyrillic" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
@@ -33,7 +34,7 @@
     <section class="about-goods">
             <div class="container">
                 <div class="row about-goods-row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 mobile-hidden">
                         <img src="images/Product1.png" alt="">
                     </div>
                     <div class="col-md-4">
@@ -43,6 +44,9 @@
                                 <div class="clock"></div>
                             </div>
                         </div>
+                        <div class="mobile-visible top-mobile-good">
+                            <img src="images/Product1.png" alt="">
+                        </div>
                         <h1>Lorem ipsum is simply dummy text printing and so ontype setting industry</h1>
                         <p class="yellow">Lorem Ipsum is simply and dummy text!</p>
                         <div class="button-wrapper">
@@ -50,7 +54,6 @@
                         </div>
                     </div>
                     <div class="col-md-5">
-
                         <!-- Contact form second!-->
                         <div class="formdiv">
                             <div style="display:none;" class="card-header">
@@ -738,9 +741,14 @@
         <div class="row">
             <div class="col-md-6">
                 <h4 class="yellow">It is a long established</h4>
+                <div class="video-border mobile-visible">
+                    <video controls="" id="top_video2" preload="metadata" style="width: 100%">
+                        <source src="video/video.mp4">
+                    </video>
+                </div>
                 <p class="video-txt">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
             </div>
-            <div class="col-md-6 video-box">
+            <div class="col-md-6 video-box mobile-hidden">
                 <div class="video-border">
                     <video controls="" id="top_video" preload="metadata" style="width: 100%">
                         <source src="video/video.mp4">
@@ -870,7 +878,6 @@
     </section>
     <section class="comments">
         <div class="comments mobile-visible">
-
             <div class="container">
                 <div class="row">
                     <!--<div class="col-md-12 text-center">-->
@@ -967,86 +974,89 @@
         </div>
 
         <div class="comments mobile-hidden">
-            <div class="slick com-wrap">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="comment-item">
-                            <div class="image-wrapper first-user">
-                                <!--<img src="images/user-1.png" alt="user">-->
+            <div class="container">
+                <div class="slick com-wrap">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="comment-item">
+                                <div class="image-wrapper first-user">
+                                    <!--<img src="images/user-1.png" alt="user">-->
+                                </div>
+                                <div class="body-comment">
+                                    <p><span class="name">Maria Bettini</span> Ho riparato la mia borsetta finalmente! Il gatto me l’aveva graffiata tutta, e mi avevano chiesto quasi 300€ per sistemarla… invece ho fatto tutto da sola!! Facilissimo!!</p>
+                                    <div class="like-row">
+                                        <div class="text">
+                                            <span class="blue">Like</span><span class="grey"><img src="images/dot.png" alt=""></span><span class="blue">Reply </span><span class="grey"><img src="images/dot.png" alt=""></span><span class="grey">1w</span>
+                                        </div>
+                                        <div class="icons">
+                                            <img src="images/like.svg" alt="like">
+                                            <span class="grey">47</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 comment-item">
+                            <div class="image-wrapper second-user">
+                                <!--<img src="images/user-2.png" alt="user">-->
                             </div>
                             <div class="body-comment">
-                                <p><span class="name">Maria Bettini</span> Ho riparato la mia borsetta finalmente! Il gatto me l’aveva graffiata tutta, e mi avevano chiesto quasi 300€ per sistemarla… invece ho fatto tutto da sola!! Facilissimo!!</p>
+                                <p><span class="name">Manuela Sbravatti </span> Non avrei mai detto che anche una persona senza la minima manualità come me sarebbe riuscita a sistemare la poltrona di casa….. se aspettavo mio marito non sarebbe ai successo!! :D</p>
                                 <div class="like-row">
                                     <div class="text">
-                                        <span class="blue">Like</span><span class="grey"><img src="images/dot.png" alt=""></span><span class="blue">Reply </span><span class="grey"><img src="images/dot.png" alt=""></span><span class="grey">1w</span>
+                                        <span class="blue">Like</span><span class="grey"><img src="images/dot.png" alt=""></span><span class="blue">Reply </span><img src="images/dot.png" alt="">
                                     </div>
                                     <div class="icons">
                                         <img src="images/like.svg" alt="like">
-                                        <span class="grey">47</span>
+                                        <span class="grey">7</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    <div class="col-lg-6 comment-item">
-                        <div class="image-wrapper second-user">
-                            <!--<img src="images/user-2.png" alt="user">-->
-                        </div>
-                        <div class="body-comment">
-                            <p><span class="name">Manuela Sbravatti </span> Non avrei mai detto che anche una persona senza la minima manualità come me sarebbe riuscita a sistemare la poltrona di casa….. se aspettavo mio marito non sarebbe ai successo!! :D</p>
-                            <div class="like-row">
-                                <div class="text">
-                                    <span class="blue">Like</span><span class="grey"><img src="images/dot.png" alt=""></span><span class="blue">Reply </span><img src="images/dot.png" alt="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="comment-item">
+                                <div class="image-wrapper third-user">
+                                    <!--<img src="images/user-1.png" alt="user">-->
                                 </div>
-                                <div class="icons">
-                                    <img src="images/like.svg" alt="like">
-                                    <span class="grey">7</span>
+                                <div class="body-comment">
+                                    <p><span class="name">Maria Bettini</span> Ho riparato la mia borsetta finalmente! Il gatto me l’aveva graffiata tutta, e mi avevano chiesto quasi 300€ per sistemarla… invece ho fatto tutto da sola!! Facilissimo!!</p>
+                                    <div class="like-row">
+                                        <div class="text">
+                                            <span class="blue">Like</span><span class="grey"><img src="images/dot.png" alt=""></span><span class="blue">Reply </span><span class="grey"><img src="images/dot.png" alt=""></span><span class="grey">1w</span>
+                                        </div>
+                                        <div class="icons">
+                                            <img src="images/like.svg" alt="like">
+                                            <span class="grey">47</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 comment-item">
+                            <div class="image-wrapper fourth-user">
+                                <!--<img src="images/user-2.png" alt="user">-->
+                            </div>
+                            <div class="body-comment">
+                                <p><span class="name">Manuela Sbravatti </span> Non avrei mai detto che anche una persona senza la minima manualità come me sarebbe riuscita a sistemare la poltrona di casa….. se aspettavo mio marito non sarebbe ai successo!! :D</p>
+                                <div class="like-row">
+                                    <div class="text">
+                                        <span class="blue">Like</span><span class="grey"><img src="images/dot.png" alt=""></span><span class="blue">Reply </span><img src="images/dot.png" alt="">
+                                    </div>
+                                    <div class="icons">
+                                        <img src="images/like.svg" alt="like">
+                                        <span class="grey">7</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="comment-item">
-                            <div class="image-wrapper third-user">
-                                <!--<img src="images/user-1.png" alt="user">-->
-                            </div>
-                            <div class="body-comment">
-                                <p><span class="name">Maria Bettini</span> Ho riparato la mia borsetta finalmente! Il gatto me l’aveva graffiata tutta, e mi avevano chiesto quasi 300€ per sistemarla… invece ho fatto tutto da sola!! Facilissimo!!</p>
-                                <div class="like-row">
-                                    <div class="text">
-                                        <span class="blue">Like</span><span class="grey"><img src="images/dot.png" alt=""></span><span class="blue">Reply </span><span class="grey"><img src="images/dot.png" alt=""></span><span class="grey">1w</span>
-                                    </div>
-                                    <div class="icons">
-                                        <img src="images/like.svg" alt="like">
-                                        <span class="grey">47</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 comment-item">
-                        <div class="image-wrapper fourth-user">
-                            <!--<img src="images/user-2.png" alt="user">-->
-                        </div>
-                        <div class="body-comment">
-                            <p><span class="name">Manuela Sbravatti </span> Non avrei mai detto che anche una persona senza la minima manualità come me sarebbe riuscita a sistemare la poltrona di casa….. se aspettavo mio marito non sarebbe ai successo!! :D</p>
-                            <div class="like-row">
-                                <div class="text">
-                                    <span class="blue">Like</span><span class="grey"><img src="images/dot.png" alt=""></span><span class="blue">Reply </span><img src="images/dot.png" alt="">
-                                </div>
-                                <div class="icons">
-                                    <img src="images/like.svg" alt="like">
-                                    <span class="grey">7</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
         </div>
     </section>
     <section class="three-bottles">
@@ -1058,44 +1068,47 @@
                     <div class="ott_col">
                         <div class="ott_main">
                             <div class="x1">
-                                <img src="images/one-two-three-1.png" alt="">
+                                <img src="images/bottles-1.png" alt="">
                             </div>
                             <div class="save">1 Flaconi <br> Spirulina & Klamath</div>
                             <p>+ costi di spedizione</p>
                             <div class="ott_price">69<span class="euro">€</span></div>
                             <p>(Prezzo originale 110€)</p>
+                            <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 41€</span></a>
                         </div>
-                        <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 41€</span></a>
+
                         <div class="sec_badges">
                             <img src="images/secure_badges.png" alt="">
                         </div>
                     </div>
                     <div class="ott_col">
-                        <div class="ott_main best-price">
+                        <div class="ott_main second-proposal">
                             <div class="x2">
-                                <img src="images/one-two-three-2.png" alt="">
+                                <img src="images/bottles-2.png" alt="">
                             </div>
-                            <div class="save">1 Flaconi <br> Spirulina & Klamath</div>
+                            <div class="save">2 Flaconi <br> Spirulina & Klamath</div>
                             <p>+ costi di spedizione</p>
                             <div class="ott_price green">99<span class="euro">€</span></div>
                             <p>(Prezzo originale 220€)</p>
+                            <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 121€</span></a>
                         </div>
-                        <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 121€</span></a>
+
                         <div class="sec_badges">
                             <img src="images/secure_badges.png" alt="">
                         </div>
                     </div>
                     <div class="ott_col">
-                        <div class="ott_main">
+                        <div class="ott_main third-proposal">
                             <div class="x3">
-                                <img src="images/one-two-three-3.png" alt="">
+                                <img src="images/bottles-3.png" alt="">
                             </div>
-                            <div class="save">1 Flaconi <br> Spirulina & Klamath</div>
+                            <div class="save">3 Flaconi <br> Spirulina & Klamath</div>
                             <p>+ costi di spedizione</p>
                             <div class="ott_price">139<span class="euro">€</span></div>
                             <p>(Prezzo originale 330€)</p>
+                            <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 191€</span></a>
                         </div>
-                        <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 191€</span></a>
+
                         <div class="sec_badges">
                             <img src="images/secure_badges.png" alt="">
                         </div>
@@ -1128,7 +1141,7 @@
             </div>
         </div>
     </section>
-    <section class="faq" id="faq">
+    <section class="faq" >
         <div class="container">
             <div class="row">
                 <div class="col text-center">
@@ -1139,7 +1152,7 @@
                 <div class="col-lg-10 offset-lg-1">
                     <ul class="faq_list">
                         <li>
-                            <h3>1. Ordinando  Oro Blu Duo Anti-age cosa riceverò a casa? </h3>
+                            <h3>1. Ordinando  Oro Blu Duo Anti-age cosa riceverò a casa?</h3>
                             <div class="result">
                                 <p>Ordinando il prodotto riceverai a casa tua una confezione di Oro Blu Anti-age Giorno e una confezione Oro Blu Anti-age Notte a soli 59€ + 4,50€ (Spese di spedizione).</p>
                             </div>
@@ -1186,7 +1199,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-12 text-center">-Gli INCI SONO: </div>
+            <div class="inci col-md-12 text-center">-Gli INCI SONO:</div>
             <div class="button-wrapper">
                 <a href="#AnchorOrderForm" class="standard-button"><b>Ordina Ora!</b><span>(ultimi pezzi disponibili)</span></a>
             </div>
@@ -1201,44 +1214,47 @@
                     <div class="ott_col">
                         <div class="ott_main">
                             <div class="x1">
-                                <img src="images/one-two-three-1.png" alt="">
+                                <img src="images/bottles-1.png" alt="">
                             </div>
                             <div class="save">1 Flaconi <br> Spirulina & Klamath</div>
                             <p>+ costi di spedizione</p>
                             <div class="ott_price">69<span class="euro">€</span></div>
                             <p>(Prezzo originale 110€)</p>
+                            <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 41€</span></a>
                         </div>
-                        <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 41€</span></a>
+
                         <div class="sec_badges">
                             <img src="images/secure_badges.png" alt="">
                         </div>
                     </div>
                     <div class="ott_col">
-                        <div class="ott_main best-price">
+                        <div class="ott_main second-proposal">
                             <div class="x2">
-                                <img src="images/one-two-three-2.png" alt="">
+                                <img src="images/bottles-2.png" alt="">
                             </div>
-                            <div class="save">1 Flaconi <br> Spirulina & Klamath</div>
+                            <div class="save">2 Flaconi <br> Spirulina & Klamath</div>
                             <p>+ costi di spedizione</p>
                             <div class="ott_price green">99<span class="euro">€</span></div>
                             <p>(Prezzo originale 220€)</p>
+                            <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 121€</span></a>
                         </div>
-                        <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 121€</span></a>
+
                         <div class="sec_badges">
                             <img src="images/secure_badges.png" alt="">
                         </div>
                     </div>
                     <div class="ott_col">
-                        <div class="ott_main">
+                        <div class="ott_main third-proposal">
                             <div class="x3">
-                                <img src="images/one-two-three-3.png" alt="">
+                                <img src="images/bottles-3.png" alt="">
                             </div>
-                            <div class="save">1 Flaconi <br> Spirulina & Klamath</div>
+                            <div class="save">3 Flaconi <br> Spirulina & Klamath</div>
                             <p>+ costi di spedizione</p>
                             <div class="ott_price">139<span class="euro">€</span></div>
                             <p>(Prezzo originale 330€)</p>
+                            <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 191€</span></a>
                         </div>
-                        <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 191€</span></a>
+
                         <div class="sec_badges">
                             <img src="images/secure_badges.png" alt="">
                         </div>
@@ -1280,44 +1296,46 @@
                     <div class="ott_col">
                         <div class="ott_main">
                             <div class="x1">
-                                <img src="images/one-two-three-1.png" alt="">
+                                <img src="images/bottles-1.png" alt="">
                             </div>
                             <div class="save">1 Flaconi <br> Spirulina & Klamath</div>
                             <p>+ costi di spedizione</p>
                             <div class="ott_price">69<span class="euro">€</span></div>
                             <p>(Prezzo originale 110€)</p>
+                            <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 41€</span></a>
                         </div>
-                        <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 41€</span></a>
+
                         <div class="sec_badges">
                             <img src="images/secure_badges.png" alt="">
                         </div>
                     </div>
                     <div class="ott_col">
-                        <div class="ott_main best-price">
+                        <div class="ott_main second-proposal">
                             <div class="x2">
-                                <img src="images/one-two-three-2.png" alt="">
+                                <img src="images/bottles-2.png" alt="">
                             </div>
-                            <div class="save">1 Flaconi <br> Spirulina & Klamath</div>
+                            <div class="save">2 Flaconi <br> Spirulina & Klamath</div>
                             <p>+ costi di spedizione</p>
                             <div class="ott_price green">99<span class="euro">€</span></div>
                             <p>(Prezzo originale 220€)</p>
+                            <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 121€</span></a>
                         </div>
-                        <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 121€</span></a>
+
                         <div class="sec_badges">
                             <img src="images/secure_badges.png" alt="">
                         </div>
                     </div>
                     <div class="ott_col">
-                        <div class="ott_main">
+                        <div class="ott_main third-proposal">
                             <div class="x3">
-                                <img src="images/one-two-three-3.png" alt="">
+                                <img src="images/bottles-3.png" alt="">
                             </div>
-                            <div class="save">1 Flaconi <br> Spirulina & Klamath</div>
+                            <div class="save">3 Flaconi <br> Spirulina & Klamath</div>
                             <p>+ costi di spedizione</p>
                             <div class="ott_price">139<span class="euro">€</span></div>
                             <p>(Prezzo originale 330€)</p>
+                            <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 191€</span></a>
                         </div>
-                        <a href="#AnchorOrderForm" class="standard-button ott_button"><b>Ordina ora!</b><span>Risparmia 191€</span></a>
                         <div class="sec_badges">
                             <img src="images/secure_badges.png" alt="">
                         </div>
